@@ -10,7 +10,19 @@ _This library is based on [DavDroid](https://gitlab.com/bitfireAT/davdroid), and
 * Powerful encryption for passwords.
 
 ## Installation
-1) Gradle integration coming soon.
+1) Configure your top-level `build.gradle` to include our repository
+```groovy
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "http://dl.bintray.com/6thsolution/public-maven" }
+    }
+}
+```
+Then config your app-level `build.gradle` to include the library as dependency:
+``` groovy
+compile 'com.sixthsolution.lpisyncadapter:lpisyncadapter:1.0.0-beta1'
+```
 
 2) config: 
 
