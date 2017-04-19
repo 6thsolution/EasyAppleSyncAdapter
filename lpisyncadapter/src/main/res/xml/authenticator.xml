@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="com.sixthsolution.lpisyncadapter.ical_access"
+    android:icon="@drawable/ical_icon"
+    android:smallIcon="@drawable/ical_icon"
+    android:label="@string/caldav_authenticator"
+    >
+
+</account-authenticator>
