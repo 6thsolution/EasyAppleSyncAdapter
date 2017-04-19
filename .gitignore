@@ -1,9 +1,19 @@
-*.iml
+# Created by .ignore support plugin (hsz.mobi)
 .gradle
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
 .DS_Store
 /build
+# Android Studio
+.idea
+*.iml
+*.class
+*.apk
 /captures
-.externalNativeBuild
+
+## Android Studio and Intellij and Android in general
+*.ipr
+*.iws
+out/
+com_crashlytics_export_strings.xml
+OkHttpClient/build
+lib/build
