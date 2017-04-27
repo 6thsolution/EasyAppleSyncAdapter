@@ -1,4 +1,4 @@
-Lpi (low pain ical) Sync Adapter is A Library for syncing with **apple** calendar.
+Lpi (low pain ical) Sync Adapter is an Android Library for syncing with **apple** calendar.
 
 Performing authentication and full duplex sync with **apple caldav** server.
 
