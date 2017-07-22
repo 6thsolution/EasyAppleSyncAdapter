@@ -1,4 +1,4 @@
-Easy Apple Sync Adapter is an Android Library for syncing with **apple** calendar.
+Easy Apple Sync Adapter is an Android Library for syncing with **apple** calendar service.
 
 Performing authentication and full duplex sync with **apple caldav** server.
 
@@ -21,7 +21,7 @@ allprojects {
 ```
 Then config your app-level `build.gradle` to include the library as dependency:
 ``` groovy
-compile 'com.sixthsolution.lpisyncadapter:lpisyncadapter:1.0.0-beta1'
+compile 'com.sixthsolution:easyapplesyncadapter:1.0.0-beta1'
 ```
 
 2) config: 

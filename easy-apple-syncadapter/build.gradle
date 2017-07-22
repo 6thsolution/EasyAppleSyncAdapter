@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 25
@@ -21,6 +22,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -42,3 +48,18 @@ dependencies {
     compile 'at.bitfire.ical4android:ical4android:1.0.0-beta1'
     testCompile 'junit:junit:4.12'
 }
+
+publish {
+    userOrg = '6thsolution'
+    groupId = 'com.sixthsolution'
+    uploadName = 'easyapplesyncadapter'
+    repoName = 'public-maven'
+    artifactId = 'easyapplesyncadapter'
+    publishVersion = '1.0.0-beta1'
+    desc = 'Easy Apple Sync Adapter is an Android Library for syncing with apple calendar service.'
+    website = 'https://github.com/6thsolution/EasyAppleSyncAdapter'
+    repository = 'https://github.com/6thsolution/EasyAppleSyncAdapter.git'
+    licences = ['Apache-2.0']
+}
+
+tasks.withType(Javadoc).all { enabled = false }
