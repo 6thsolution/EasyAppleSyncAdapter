@@ -1,4 +1,4 @@
-Lpi (low pain ical) Sync Adapter is an Android Library for syncing with **apple** calendar.
+Easy Apple Sync Adapter is an Android Library for syncing with **apple** calendar.
 
 Performing authentication and full duplex sync with **apple caldav** server.
 
@@ -29,7 +29,7 @@ compile 'com.sixthsolution.lpisyncadapter:lpisyncadapter:1.0.0-beta1'
 **Authenticator config** : Add Authenticator service to your manifest:
 ```xml
 <service
-    android:name="com.sixthsolution.applesyncadapter.authenticator.ICalAuthenticatorService"
+    android:name="com.sixthsolution.lpisyncadapter.authenticator.ICalAuthenticatorService"
     android:exported="false"
     >
     <intent-filter>
@@ -46,7 +46,7 @@ compile 'com.sixthsolution.lpisyncadapter:lpisyncadapter:1.0.0-beta1'
         />
     <meta-data
         android:name="unique_authentication_type"
-        android:value="com.sixthsolution.icalauthenticatorlib.ical_access"
+        android:value="com.sixthsolution.lpisyncadapter.ical_access"
         />
 </service>
 ```
@@ -57,7 +57,7 @@ The authenticator config file, something like this:
 ```xml
 <account-authenticator 
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:accountType="com.sixthsolution.icalauthenticatorlib.ical_access"
+    android:accountType="com.sixthsolution.lpisyncadapter.ical_access"
     android:icon="@drawable/ical_icon"
     android:smallIcon="@drawable/ical_icon"
     android:label="@string/caldav_authenticator">
